@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import '../payment.scss';
 
 export default function Pix({product, setCodePixCopy, setPixLink, setPage, checkStatusFunc}) {
-    const apiURL = "http://localhost:5000"
+    const apiURL = "https://mercadopago-api-pix.vercel.app/api/pix";
     const [userDetails, setUserDetails ] = useState({ name: '', email: '', cpf: '123.456.789-00'});
 
     const eventValue = (e) => {

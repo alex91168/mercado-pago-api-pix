@@ -16,7 +16,7 @@ export default function Payment() {
   const [CodePixCopy, setCodePixCopy] = useState('');
   const [pixLink, setPixLink] = useState('');
   const [popUpCopy, setPopUpCopy] = useState(false);
-  const apiURL = "http://localhost:5000"
+  const apiURL = "https://mercadopago-api-pix.vercel.app/api/checkstatuspayment";
 
   const getMethod = (value) => {
     if (methodPay === value) {

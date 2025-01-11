@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './App.scss'
 
 export default function App() {
-  const apiURL = "http://localhost:5000"
+  const apiURL = "https://mercadopago-api-pix.vercel.app/api/catalogKabum";
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
