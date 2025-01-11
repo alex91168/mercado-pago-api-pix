@@ -3,7 +3,7 @@
 <p>
   Este projeto demonstra a integração de pagamentos via <strong>PIX</strong> utilizando a 
   <strong>API do Mercado Pago</strong>. Foi desenvolvido com <strong>React</strong> e 
-  <strong>Node.js</strong>, inspirado no site de vendas fictício <strong>"Kabum"</strong>. 
+  <strong>Node.js</strong>, utilizando dados fictícios do site <strong>"Kabum"</strong>. 
   A aplicação exibe um fluxo funcional de pagamento, incluindo a geração de 
   <strong>QR Code</strong> e verificação automática do status da transação.
 </p>
@@ -13,10 +13,6 @@
 <h2>🚀 Funcionalidades</h2>
 
 <ul>
-  <li>
-    <strong>Cadastro do usuário:</strong> O usuário insere informações como <strong>nome</strong>, 
-    <strong>e-mail</strong> e <strong>CPF válido</strong>.
-  </li>
   <li>
     <strong>Geração de QR Code:</strong> Após o preenchimento dos dados, é gerado um 
     <strong>QR Code</strong> para pagamento via PIX.
