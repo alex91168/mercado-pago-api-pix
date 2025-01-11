@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-export default async (res) => {
+export default async (req, res) => {
     const response = await fetch('https://servicespub.prod.api.aws.grupokabum.com.br/descricao/v1/descricao/familia/521362', 
         {
             method: 'GET',
