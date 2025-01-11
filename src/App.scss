@@ -1,0 +1,107 @@
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100%;
+  background: #242424;
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
+  #product-main-box{
+    display: flex;
+    width: 300px;
+    height: 450px;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.582);
+    box-shadow: 1px 1px 5px grey;
+    align-items: center;
+    padding: 10px;
+    padding-top: 0;
+    #avaliacao{
+      display: flex;
+      height: 15px;
+      width: 100%;
+      font-size: 12px;
+      justify-content: end;
+    }
+    #img-box{
+      display: flex;
+      width: 100%;
+      height: 40%;
+      justify-content: center;
+      align-items: center;
+      img{
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    #text{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 50px;
+      h2{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;  
+        overflow: hidden;       
+        text-overflow: ellipsis; 
+        line-height: 1.5;        
+        max-height: calc(1.5em * 2); 
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: rgb(66, 70, 77);
+      }
+      #price{
+        display: flex;
+        flex-direction: column;
+        #old-price{
+          span{
+            font-weight: 600;
+            font-size: 12px;
+            color: grey
+          }
+          span:nth-child(2){
+            text-decoration: line-through;
+          }
+        }
+        #new-price{
+          display: flex;
+          width: 100%;
+          gap: 5px;
+          span{
+            font-weight: 600;
+            font-size: 26px;
+            color: green;
+          }
+        }
+        #price-text{
+          color: rgb(99, 98, 98);
+        }
+      }
+    }
+    #checkout-button{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+    button{
+      width: 100%;
+      height: 40px;
+      border: none;
+      border-radius: 16px;
+      background-color: grey;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button:hover{
+      transform: scale(1.01);
+      box-shadow: 1px 1px 5px grey;
+    }
+  }
+}

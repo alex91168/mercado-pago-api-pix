@@ -1,0 +1,255 @@
+#main-container-payment{
+    display: flex;
+    flex-direction: row;
+    background: #242424;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    #payment-geral{
+        display: flex;
+        width: 80%;
+        height: 80%;
+        background-color: rgb(138, 138, 138);
+        border-radius: 16px;
+        flex-direction: row;
+        .payment-box{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+        }
+        .right{
+            display: flex;
+            width: 40%;
+            border-left: 1px solid black;
+            box-shadow: 0px 0px 1px 0px black;
+            #details-checkout{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                #valor-total{
+                    margin-top: 50px;
+                    span{
+                        font-size: 26px;
+                    }
+                }
+            .payment-btn-box{
+                display: flex;
+                align-items: end;
+                width: 100%;
+                height: 100%;
+                .payment-btn{
+                    display: flex;
+                    width: 100%;
+                    height: 40px;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 16px;
+                }
+                .payment-btn:hover{	
+                    box-shadow: 1px 1px 5px 1px black;
+                    
+                }
+            }
+            }
+        }
+        .left-pg1{
+            flex-direction: column;
+        }
+        #title-method{
+                display: flex;
+                width: 100%;
+                height: 40px;
+                align-items: center;
+                justify-content: center;
+                h2{
+                    font-size: 30px;
+                }
+        }
+        #payment-method{
+                display: flex;
+                width: 100%;
+                height: 60px;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                .method{
+                    display: flex;
+                    width: 80px;
+                    height: 40px;
+                    padding: 15px;
+                    background-color: white;
+                    border-radius: 16px;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    font-weight: 400;
+                }
+                .cc{
+                    width: 160px;
+                }
+        }
+        .input-user{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            width: 100%;
+            input{
+                width: 100%;
+                height: 40px;
+            }
+            #input-user-email-cpf{
+                display: flex;
+                gap: 5px;
+                width: 100%;
+                .input-user-2{
+                    width: 50%;
+                    height: 25px;
+                }
+            }
+        }
+        #btn-confirm{
+            display: flex;
+            margin-top: 50px;
+            width: 100%;
+            justify-content: end;
+            button{
+                width: 150px;
+                height: 40px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+        #qr-code{
+                display: flex;
+                margin-top: 50px;
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                #linkpix{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+        }
+        #code-pix{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            position: relative;
+            #copiado{
+                display: none;
+                position: absolute;
+                right: 25%;
+                width: 10%;
+                border-radius: 40px;
+                background-color: rgba(255, 255, 255, 0.295);
+                height: 30px;
+                align-items: center;
+                justify-content: center;
+                top: -30px;
+            }   
+            #copiado.active{
+                display: flex;
+            }
+        }
+        
+    }
+}
+#bread{
+    width: 100%;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#bread::before{
+    content: "< ";
+}
+
+//box do produto
+.payment-produto-box{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 30%;
+    padding-left: 10px;
+    background-color: white;
+    border-radius: 16px;
+    gap: 10px;
+    padding: 10px;
+    #payment-produto-img{
+        display: flex;
+        width: 50%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            object-fit: contain;
+        }
+    }
+    #payment-divisor{
+        display: flex;
+        width: 1px;
+        height: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.678);
+    }
+    #payment-produto-info{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 10px;
+        padding-top: 15px;
+        h3{
+            font-size: 12px;
+        }
+        p{
+            font-size: 22px;
+            font-weight: 800;
+        }
+    }
+}
+.page0-product{
+    width: 100%;
+    #payment-produto-img{
+        width: 20%;
+    }
+    #payment-produto-info{
+        width: 80%;
+        gap: 50px;
+    }
+}
+.page1-product{
+    width: 100% ;
+    #payment-produto-img{
+        width: 40%;
+        height: 90%;
+    }
+    #payment-produto-info{
+        h3{
+            font-size: 11px;
+        }
+    }
+}
+.pagamento-status{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    flex-direction: column;
+    p{
+        font-size: 22px;
+        font-weight: 600;
+        color: white;
+    }
+    span{
+        font-size: 12px;
+    }
+}
