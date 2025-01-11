@@ -155,7 +155,6 @@ export default function Payment() {
               checkStatusFunc={checkStatusFunc}/>
                : null}
             {methodPay === 2 ? <Cc product={getDetails}/> : null}
-            <button onClick={() => checkId()}>TESTE</button>
           </div>
         </div>
         <div className='payment-box right'>
